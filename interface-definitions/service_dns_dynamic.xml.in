@@ -127,9 +127,14 @@
                         <format>hostname</format>
                         <description>Fully qualified domain name of the remote server</description>
                       </valueHelp>
+                      <valueHelp>
+                        <format>url</format>
+                        <description>url of the remote server</description>
+                      </valueHelp>                      
                       <constraint>
                         <validator name="ip-address"/>
                         <validator name="fqdn"/>
+                        <validator name="url"/>
                       </constraint>
                       <constraintErrorMessage>Remote server must be IP address or fully qualified domain name</constraintErrorMessage>
                     </properties>
